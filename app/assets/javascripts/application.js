@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require twitter/bootstrap
+//= require bootstrap-datepicker
 //= require rails-ujs
 //= require_tree .
