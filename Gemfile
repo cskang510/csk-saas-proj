@@ -13,6 +13,7 @@ gem 'pg', '~> 0.18'
 gem 'devise'
 gem 'milia'
 gem 'aws-sdk'
+gem 'stripe'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -46,6 +47,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver'
+  gem 'pry'
 end
 
 group :development do
