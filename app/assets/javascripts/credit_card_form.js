@@ -49,7 +49,7 @@ $(document).ready(function () {
       } else {
           $('[data-stripe]').hide();
           $form.off('submit');
-          $('[data-stripe]').removeProp('required');
+          $('[data-stripe]').prop('required', false);
       }
       
       
@@ -76,7 +76,7 @@ $(document).ready(function () {
         } else {
             // the following code is from Stripe. See Stripe documentation
             token = response.id;
-            $form.append($("<input type=\"hidden\" name=\"payment[token]\"/>").val(token));
+            $form.append($("<input type=\"hidden\" name=\"payment[token]\" />").val(token));
             $("[data-stripe=number]").remove();
             $("[data-stripe=cvv]").remove();
             $("[data-stripe=exp-year]").remove();
